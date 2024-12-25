@@ -1,105 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100" data-bs-theme="auto">
+
 <head>
   <meta charset="utf-8">
-  <title>Where to feed the ducks in Gothenburg</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Where to feed the ducks in Gothenburg">
+  <meta name="author" content="Pavel Kim">
+  <title>Where to feed the ducks in Gothenburg</title>
+
+  <link rel="canonical" href="https://wheretofeedtheducksingothenburg.com/">
   <link rel="icon" type="image/png" href="favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-<style>
-body, html {
-  height: 100%;
-}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 
-.main {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  height: 100px;
-  /* background-color: #222222; Optional: Add a background color to the header */
-  /* opacity: 0.6; */
-  /* color: rgb(75, 30, 22); */
-  color: rgb(233, 233, 233);
-  margin: 0;
-  padding: 0;
-  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
-  background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
-  transition: .3s all ease-in-out;
-
-  font-size: 20pt;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
-}
-
-.map {
-  flex-grow: 1;
-  background-color: #e0e0e0; /* Optional: Add a background color to the map */
-  margin: 0;
-  padding: 0;
-}
-
-.map_overlay {
-  position: absolute;
-  width: 100%;
-  /* opacity: 0.5; */
-  background:
-    url('data:image/svg+xml;utf8,<svg height="200" width="190" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 190,0 150,190" style="fill:black;stroke:black;stroke-width:1" /></svg>') 
-    center/auto 100%;
-}
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-} 
-
-a {
-    color: inherit;
-}
-</style>
 </head>
-<body style="margin: 0; padding: 0;">
 
-<main class="main">
-  <div class="header">
-    <div style="display: flex; align-items: center; width: 100%; height: 100%;">
-      <span style="position: absolute; margin-left: 40px;">
-        <a href="/">Where to feed the ducks in Gothenburg</a>
-      </span>
-      <span style="position: absolute; right: 40px; font-size: 15pt;">
-        <a href="/about.html">about</a>
-      </span>
-    </div>
-</div>
-  <div class="map" style="position: relative;">
-    <div class="map_overlay">
-    </div>
-    <iframe width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.de/en/map/where-to-feed-the-ducks-in-gothenburg_77934?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=true&fullscreenControl=false&captionControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/57.7023/11.9698">
-    </iframe>
+<body class="d-flex h-100 text-center text-bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto p-3">
+      <div>
+        <h3 class="float-md-start mb-0"><a href="/">Where to feed the ducks in Gothenburg</a></h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Map</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-3 h-80">
+      <iframe class="h-100" width="100%" frameborder="0" allowfullscreen allow="geolocation"
+        src="https://umap.openstreetmap.de/en/map/where-to-feed-the-ducks-in-gothenburg_77934?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=true&fullscreenControl=false&captionControl=false&locateControl=false&measureControl=false&editinosmControl=false#13/57.7023/11.9698">
+      </iframe>
+    </main>
+
+    <footer class="mt-4 text-white-50">
+      <p>copyright and whatnot</p>
+    </footer>
   </div>
-</main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 
 </body>
-</html>
 
+</html>
