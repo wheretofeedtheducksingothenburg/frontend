@@ -1,0 +1,9 @@
+main:
+
+  - name: Map
+    pageRef: /
+    weight: 10
+
+  - name: About
+    pageRef: /about
+    weight: 30

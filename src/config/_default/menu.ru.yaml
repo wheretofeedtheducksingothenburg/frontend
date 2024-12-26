@@ -1,0 +1,9 @@
+main:
+
+  - name: Карта
+    pageRef: /
+    weight: 10
+
+  - name: О проекте
+    pageRef: /about
+    weight: 30

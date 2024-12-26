@@ -1,0 +1,32 @@
+<header class="mb-auto p-3">
+	<div>
+	  <h3 class="float-md-start mb-0"><a href="{{ .Lang | relURL }}">{{ .Site.Language.Title }}</a></h3>
+	  <nav class="nav nav-masthead justify-content-center float-md-end">
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+			{{ $menuItemURL := .URL | relLangURL }}
+			{{ $currentPageURL:= $currentPage.RelPermalink | relLangURL }}
+			{{ if eq $currentPageURL $menuItemURL }}
+				<a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+			{{ else }}
+				<a class="nav-link fw-bold py-1 px-0" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+			{{ end }}
+		{{ end }}
+		<span class="nav-link fw-bold py-1 px-0"> | </span>
+		{{ $siteLanguages := site.Languages}}
+		{{ $pageLang := .Page.Lang}}
+		{{- range .Page.AllTranslations }}
+		    {{ $translation := . }}
+		    {{- range $siteLanguages }}
+		        {{- if eq $translation.Lang .Lang }}
+		            {{ if eq $pageLang .Lang}}
+		                <span class="nav-link fw-bold py-1 px-0 active" href="{{ $translation.Permalink | relURL }}">{{ .Lang | upper }}</span>
+		            {{ else }}
+		                <a class="nav-link fw-bold py-1 px-0" href="{{ $translation.Permalink | relURL }}">{{ .Lang | upper }}</a>
+		            {{ end }}
+		        {{- end }}
+		    {{- end }}
+		{{- end }}
+	  </nav>
+	</div>
+  </header>

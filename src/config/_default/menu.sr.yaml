@@ -1,0 +1,9 @@
+main:
+
+  - name: Mapa
+    pageRef: /
+    weight: 10
+
+  - name: O nama
+    pageRef: /about
+    weight: 30

@@ -1,0 +1,12 @@
+name = "WTFTDIG"
+license = "MIT"
+licenselink = "https://github.com/wheretofeedtheducksingothenburg/frontend/LICENSE"
+description = "A theme for the WTFTDIG website."
+homepage = "https://github.com/wheretofeedtheducksingothenburg"
+tags = ["map", "simple", "responsive", "minimal", ]
+features = ["Clean and minimal", "Responsive", "Map",]
+min_version = "0.41"
+
+[author]
+  name = "Pavel Kim"
+  homepage = "https://github.com/pavelkim"
