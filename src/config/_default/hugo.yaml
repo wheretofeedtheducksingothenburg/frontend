@@ -4,6 +4,8 @@ languageCode: en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 
+enableRobotsTXT: true
+
 params:
   contact:
     email: duck@wheretofeedtheducksingothenburg.com
