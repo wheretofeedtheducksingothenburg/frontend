@@ -12,6 +12,7 @@ params:
   subtitle: Where to feed the ducks in Gothenburg
 
 title: Where to feed the ducks in Gothenburg
+description: There is a map with places where you can feed the ducks in Gothenburg.
 
 theme: "wtftdig"
 paginate: 20
@@ -28,6 +29,8 @@ params:
 
   mainSections:
     - posts
+
+  og_image: https://wheretofeedtheducksingothenburg.com/preview512sq.png
 
   announcementSections:
     - tournaments
@@ -53,6 +56,7 @@ languages:
     weight: 1
     params:
       subtitle: knowledge base
+      description: There is a map with places where you can feed the ducks in Gothenburg. We've gathered locations with ducks in Gothenburg.
 
   ru:
     disabled: false
@@ -63,6 +67,7 @@ languages:
     weight: 3
     params:
       subtitle: Знания
+      description: Карта с местами для кормления уток в Гётеборге. Мы собрали самые лучшие места, где найти уток в Гётеборге.
 
   sr:
     disabled: false
@@ -70,6 +75,6 @@ languages:
     languageDirection: ltr
     languageName: Serbian
     title: Gde hraniti patke u Geteborgu
-    weight: 2
     params:
       subtitle: Znanje
+      description: Postoji mapa sa mestima gde možete hraniti patke u Geteborgu. Sakuplili smo lokacije sa patkama u Geteborgu.

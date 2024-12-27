@@ -56,9 +56,7 @@
   {{- template "_internal/opengraph.html" . -}}
   {{- template "_internal/twitter_cards.html" . -}}
 
-  {{ if and (isset .Site.Params "social") (.Site.Params.useCDN | default true) -}}
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  {{ end }}
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
   {{ if .Site.Params.useCDN | default true -}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
