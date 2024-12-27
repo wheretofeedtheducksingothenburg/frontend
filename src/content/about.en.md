@@ -11,4 +11,4 @@ Development: [github.com/wheretofeedtheducksingothenburg](https://github.com/whe
 
 E-mail: duck@wheretofeedtheducksingothenburg.com
 
-Twitter: [https://x.com/whrtfddksngtbrg](@whrtfddksngtbrg)
+Twitter: [@whrtfddksngtbrg](https://x.com/whrtfddksngtbrg)
