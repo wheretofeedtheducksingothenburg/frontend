@@ -97,6 +97,7 @@ jobs:
         id: output_results
         shell: bash
         run: |
-          echo "Pages URL: ${{ steps.deploy-pages.outputs.page_url }}"
+          echo "Pages URL: ${{ steps.deploy_pages.outputs.page_url }}"
+          echo "Base URL: ${{ steps.define_environment_variables.outputs.base_url }}"
 
 ...
