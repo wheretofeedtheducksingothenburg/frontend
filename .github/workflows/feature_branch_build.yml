@@ -7,9 +7,6 @@ name: Build Feature Branch
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-      - "*"
 
 jobs:
 
