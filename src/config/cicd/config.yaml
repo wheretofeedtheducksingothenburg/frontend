@@ -1,0 +1,5 @@
+---
+
+publishDir: {{ getenv "HUGO_PUBLISH_DIR" | default "./public" }}
+
+...
