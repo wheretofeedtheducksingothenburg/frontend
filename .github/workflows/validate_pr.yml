@@ -71,7 +71,6 @@ jobs:
           TZ: Europe/Stockholm
         run: >-
           hugo
-            --gc
             --minify
             --baseURL "${{ steps.define_environment_variables.outputs.base_url }}"
 
