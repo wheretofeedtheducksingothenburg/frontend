@@ -50,7 +50,7 @@ jobs:
 
       - name: Install Hugo CLI
         id: install_hugo_cli
-        working_directory: ./src
+        working-directory: ./src
         shell: bash
         run: >-
           set -e
