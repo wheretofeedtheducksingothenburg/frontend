@@ -2,17 +2,17 @@
 # yamllint disable rule:line-length
 # yamllint disable rule:truthy
 
-name: Validate Pull Request
+name: Build branch
 
 on:
-  pull_request:
+  push:
     branches:
-      - master
+      - '*'
 
 jobs:
 
   build:
-    name: Build Pull Request
+    name: Build branch
     runs-on: ubuntu-latest
 
     permissions:
