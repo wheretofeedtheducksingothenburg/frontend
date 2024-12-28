@@ -71,8 +71,9 @@ jobs:
           TZ: Europe/Stockholm
         run: >-
           hugo
-            --minify
-            --baseURL "${{ steps.define_environment_variables.outputs.base_url }}"
+          --gc
+          --minify
+          --baseURL "${{ steps.define_environment_variables.outputs.base_url }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
