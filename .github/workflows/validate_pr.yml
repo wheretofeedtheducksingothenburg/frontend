@@ -79,10 +79,15 @@ jobs:
           --minify
           --baseURL "${{ steps.define_environment_variables.outputs.base_url }}"
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
+        id: upload_pages_artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ steps.define_environment_variables.outputs.workdir }}
+
+      - name: Deploy to GitHub Pages
+        id: deploy_pages
+        uses: actions/deploy-pages@v4
 
       - name: Print out the results
         id: output_results
