@@ -7,8 +7,8 @@ name: Build Feature Branch
 on:
   push:
     branches:
-      - '!master'
       - '*'
+      - '!master'
 
 jobs:
 
