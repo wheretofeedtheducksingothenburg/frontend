@@ -2,7 +2,7 @@ baseURL: https://wheretofeedtheducksingothenburg.com/
 
 languageCode: en
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 
 enableRobotsTXT: true
 
