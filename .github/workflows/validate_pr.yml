@@ -50,7 +50,6 @@ jobs:
 
       - name: Install Hugo CLI
         id: install_hugo_cli
-        working-directory: ./src
         shell: bash
         run: >-
           set -e
@@ -64,6 +63,7 @@ jobs:
       - name: Build with Hugo
         id: build
         shell: bash
+        working-directory: ./src
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
