@@ -2,7 +2,7 @@
 # yamllint disable rule:line-length
 # yamllint disable rule:truthy
 
-name: Validate PR
+name: Validate Pull Request
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ on:
 jobs:
 
   build:
-    name: Build PR
+    name: Build Pull Request
     runs-on: ubuntu-latest
 
     outputs:
@@ -40,7 +40,7 @@ jobs:
         run: |
           echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
           echo "publish_dir=${{ runner.temp }}/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}/public" >> $GITHUB_OUTPUT
-          echo "base_url=${{ steps.pages.outputs.base_url }}/${{ steps.define_environment_variables.outputs.branch }}/" >> $GITHUB_OUTPUT
+          echo "base_url=${{ steps.setup_pages.outputs.base_url }}/${{ steps.define_environment_variables.outputs.branch }}/" >> $GITHUB_OUTPUT
 
       - name: Install Hugo CLI
         id: install_hugo_cli
