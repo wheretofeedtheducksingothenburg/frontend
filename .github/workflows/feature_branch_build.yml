@@ -2,17 +2,18 @@
 # yamllint disable rule:line-length
 # yamllint disable rule:truthy
 
-name: Build branch
+name: Build Feature Branch
 
 on:
   push:
     branches:
+      - '!master'
       - '*'
 
 jobs:
 
   build:
-    name: Build branch
+    name: Build feature branch
     runs-on: ubuntu-latest
 
     permissions:
