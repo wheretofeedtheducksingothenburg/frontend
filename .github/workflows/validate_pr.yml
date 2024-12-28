@@ -47,7 +47,7 @@ jobs:
           echo "branch=${_branch}" >> $GITHUB_OUTPUT
           echo "workdir=${_workdir}" >> $GITHUB_OUTPUT
           echo "publish_dir=${_workdir}/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}/public" >> $GITHUB_OUTPUT
-          echo "base_url=${{ steps.setup_pages.outputs.base_url }}/${_branch}/" >> $GITHUB_OUTPUT
+          echo "base_url=${{ steps.setup_pages.outputs.base_url }}/${_branch}/public/" >> $GITHUB_OUTPUT
 
       - name: Make sure the publish directory exists
         id: make_sure_publish_dir_exists
@@ -97,6 +97,6 @@ jobs:
         id: output_results
         shell: bash
         run: |
-          echo "Pages URL: ${{ steps.define_environment_variables.outputs.base_url }}"
+          echo "Pages URL: ${{ steps.deploy-pages.outputs.page_url }}"
 
 ...
