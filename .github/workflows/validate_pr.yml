@@ -71,7 +71,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: cicd
-          HUGO_PUBLISH_DIR: ${{ steps.define_environment_variables.outputs.publish_dir }}
+          HUGO_PUBLISHDIR: ${{ steps.define_environment_variables.outputs.publish_dir }}
           TZ: Europe/Stockholm
         run: >-
           hugo
