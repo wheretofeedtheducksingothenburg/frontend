@@ -39,14 +39,17 @@ jobs:
         shell: bash
         run: |
           _branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
+          _workdir=${{ runner.temp }}/hugo
           echo "branch=${_branch}" >> $GITHUB_OUTPUT
-          echo "publish_dir=${{ runner.temp }}/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}/public" >> $GITHUB_OUTPUT
+          echo "workdir=${_workdir}" >> $GITHUB_OUTPUT
+          echo "publish_dir=${_workdir}/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}/public" >> $GITHUB_OUTPUT
           echo "base_url=${{ steps.setup_pages.outputs.base_url }}/${_branch}/" >> $GITHUB_OUTPUT
 
       - name: Make sure the publish directory exists
         id: make_sure_publish_dir_exists
         shell: bash
         run: |
+          mkdir -pv ${{ steps.define_environment_variables.outputs.workdir }}
           mkdir -pv ${{ steps.define_environment_variables.outputs.publish_dir }}
 
       - name: Install Hugo CLI
@@ -67,7 +70,7 @@ jobs:
         working-directory: ./src
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
+          HUGO_ENVIRONMENT: cicd
           HUGO_PUBLISH_DIR: ${{ steps.define_environment_variables.outputs.publish_dir }}
           TZ: Europe/Stockholm
         run: >-
@@ -79,7 +82,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ steps.define_environment_variables.outputs.publish_dir }}
+          path: ${{ steps.define_environment_variables.outputs.workdir }}
 
       - name: Print out the results
         id: output_results
