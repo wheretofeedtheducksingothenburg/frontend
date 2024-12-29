@@ -75,6 +75,7 @@ languages:
     languageDirection: ltr
     languageName: Serbian
     title: Gde hraniti patke u Geteborgu
+    weight: 5
     params:
       subtitle: Znanje
       description: Postoji mapa sa mestima gde možete hraniti patke u Geteborgu. Sakuplili smo lokacije sa patkama u Geteborgu.
