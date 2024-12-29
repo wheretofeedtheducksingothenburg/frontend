@@ -22,6 +22,9 @@ frontmatter:
     - ":filename"
     - ":default"
 
+disableKinds:
+  - taxonomy
+
 permalinks:
   posts: ":year/:month/:title/"
 
