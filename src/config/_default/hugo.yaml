@@ -61,6 +61,18 @@ languages:
       subtitle: knowledge base
       description: There is a map with places where you can feed the ducks in Gothenburg. We've gathered locations with ducks in Gothenburg.
 
+  se:
+    disabled: false
+    contentDir: content/se
+    languageCode: se
+    languageDirection: ltr
+    languageName: Swedish
+    title: Var man matar ankorna i Göteborg
+    weight: 1
+    params:
+      subtitle: Kunskapsbas
+      description: Det finns en karta med platser där man kan mata ankorna i Göteborg. Vi har samlat platser med ankor i Göteborg.
+
   ru:
     disabled: false
     languageCode: ru
