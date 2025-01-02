@@ -1,0 +1,9 @@
+main:
+
+  - name: Karta
+    pageRef: /
+    weight: 10
+
+  - name: Om oss
+    pageRef: /about
+    weight: 30
