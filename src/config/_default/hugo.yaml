@@ -68,7 +68,7 @@ languages:
     languageDirection: ltr
     languageName: Swedish
     title: Var man matar ankorna i Göteborg
-    weight: 1
+    weight: 2
     params:
       subtitle: Kunskapsbas
       description: Det finns en karta med platser där man kan mata ankorna i Göteborg. Vi har samlat platser med ankor i Göteborg.
