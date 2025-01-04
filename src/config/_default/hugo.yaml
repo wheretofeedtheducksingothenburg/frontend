@@ -71,7 +71,7 @@ languages:
     weight: 2
     params:
       subtitle: Kunskapsbas
-      description: Det finns en karta med platser där man kan mata ankorna i Göteborg. Vi har samlat platser med ankor i Göteborg.
+      description: Vart kan man mata ankorna i Göteborg? Vi har svaret. Det finns en karta med platser där man kan mata ankorna i Göteborg. Vi har samlat platser med ankor.
 
   ru:
     disabled: false
