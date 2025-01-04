@@ -67,7 +67,7 @@ languages:
     languageCode: se
     languageDirection: ltr
     languageName: Swedish
-    title: Var man matar ankorna i Göteborg
+    title: Vart kan man mata ankorna i Göteborg
     weight: 2
     params:
       subtitle: Kunskapsbas
