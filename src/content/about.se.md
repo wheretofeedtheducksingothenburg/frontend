@@ -8,7 +8,7 @@ show_date_posted: false
 
 Det här är en webbplats där du kan ta reda på de bästa ställena i Göteborg att mata ankorna på. 
 
-Vart kan man mata ankorna i Göteborg? Vi har svaret.
+Vart kan man mata änder i Göteborg? Vi har svaret.
 
 Mjukvaruutveckling: [github.com/wheretofeedtheducksingothenburg](https://github.com/wheretofeedtheducksingothenburg)
 
